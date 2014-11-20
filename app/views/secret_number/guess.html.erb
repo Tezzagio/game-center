@@ -4,6 +4,12 @@
 
 <% if @guessed %>
   <h1>YOU WIN</h1>
+  <p>
+  <%= image_tag 'winner.jpeg'  %>
+  </p>
 <% else %>
   <h1>YOU LOOOOOOOOSE</h1>
+  <p>
+  <%= image_tag 'loser.gif'  %>
+  </p>
 <% end %>
