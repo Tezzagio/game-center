@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'secret-number' => 'secret_number#index'
+  get 'secret-number/guess/:number' => 'secret_number#guess'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

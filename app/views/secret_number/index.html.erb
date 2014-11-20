@@ -1,0 +1,12 @@
+<h1>Welcome to Secret Number</h1>
+
+<p>Please pick a number:</p>
+<ul>
+  <% (1..10).each do |number| %>
+    <li>
+    <a href="/secret-number/guess/<%= number %>">
+    <%= number %>
+    </a>
+    </li>
+  <% end %>
+</ul>
